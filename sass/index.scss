@@ -1,0 +1,58 @@
+@use 'components/_utilities.scss';
+
+
+body {
+    font-family: utilities.$Fuente-1;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: utilities.$color-oscuro;
+}
+
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background: url("https://static.platzi.com/media/public/uploads/cover_909cd27f-8eb3-4e9a-9cae-c5549009f6b5.png");
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    section {
+        display: grid;
+        grid-column: 2;
+        justify-items: center;
+        height: 350px;
+        margin-top: 80px;
+    }
+    &-title {
+        text-align: center;
+        margin:0 auto; 
+        color: utilities.$color-claro; 
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 10px;
+    }
+    &-button{
+        width: 110px;
+        height: 50px;
+        background-color: utilities.$color-primario;
+        border: none;
+        border-radius: 10px;
+        display: grid;
+        align-items: center;
+
+        a {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    }
+}
