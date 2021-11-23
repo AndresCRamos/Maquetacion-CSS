@@ -1,0 +1,15 @@
+@use '_utilities.scss';
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: utilities.$color-intermedio-2;
+    border-top: 35px solid utilities.$color-primario;
+    text-align: center;
+
+    p {
+        color: utilities.$color-claro;
+        margin-top: 30px;
+        
+    }
+}
