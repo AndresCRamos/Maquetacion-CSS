@@ -1,0 +1,45 @@
+@use 'components/_utilities.scss';
+
+.perfil-info-container {
+    @include utilities.info-box;
+
+    .main-info {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+.perfil-projects-container {
+    max-width: 980px;
+    margin: 50px auto 0;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        border-bottom: solid 1px utilities.$color-intermedio-1;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+.post-card-project {
+    display: inline-block;
+    padding: 0 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+
+    h4 {
+        font-weight: bold;
+        background-color: utilities.$color-primario;
+        color: utilities.$color-claro;
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+    }
+    p {
+        margin-bottom: 35px;
+        text-align: justify;
+    }
+}

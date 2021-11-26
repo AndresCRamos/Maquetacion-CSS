@@ -1,0 +1,24 @@
+@use 'components/_utilities.scss';
+
+.blogpost-img-container {
+    padding: 0 50px 40px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.blogpost-main-container {
+    padding: 0 50px 40px;
+
+    h3 {
+        border-bottom: 1px solid utilities.$color-intermedio-1;
+        padding-bottom: 20px;
+    }
+}
+
+.post-container {
+    h1 {
+        font-size: 35px;
+    }
+}

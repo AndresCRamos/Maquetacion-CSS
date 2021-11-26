@@ -5,44 +5,9 @@
 }
 
 .blogs-news-container{
-    background-color: utilities.$color-secundario;
-    padding: 0 50px 40px; 
+    @include utilities.info-box
 }
 
-.blogs-news {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr;
-
-    &-img-container {
-        grid-column: 1;
-        display: flex;
-        justify-content: center;
-        
-        img {
-            width: 85%;
-            
-        }
-    }
-
-    &-info-container{
-        grid-column: 2;
-
-        p {
-            margin-bottom: 35px;
-        }
-    }
-}
-
-.blogs-posts-container {
-    padding: 0 50px 40px;
-    
-    h3 {
-        border-bottom: 1px solid utilities.$color-intermedio-1;
-        padding-bottom: 20px;
-        text-align: center;
-    }
-}
 
 .post-card {
     display: inline-block;

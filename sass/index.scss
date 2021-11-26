@@ -9,12 +9,6 @@
     right: 0;
 }
 
-a {
-    text-decoration: none;
-    display: inline;
-    color: utilities.$color-oscuro;
-}
-
 .home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;

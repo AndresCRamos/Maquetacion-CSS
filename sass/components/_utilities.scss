@@ -22,13 +22,67 @@ $Fuente-1: "Roboto mono", monospace;
     }
 }
 
-.grid-container {
-    max-width: 980px;
-    margin: 0 auto;
+@mixin info-box {
+    display: grid;
+    background-color: $color-secundario;
+    padding: 0 50px 40px; 
+    
+    .main-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr;
+    
+        &-img-container {
+            grid-column: 1;
+            
+            img {
+                width: 95%;
+            }
+        }
+    
+        &-text-container{
+            grid-column: 2;
+    
+            p {
+                margin-bottom: 35px;
+            }
+        }
+    }
 }
 
 body {
     font-family: $Fuente-1;
     margin: 0;
     padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: $color-oscuro;
+}
+
+.grid-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.contact-main-container {
+    background-color: $color-secundario;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0 100px;
+    .contact-container {
+        display: flex;
+        width: 35%;
+        img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: underline;
+            font-weight: 450;
+        }
+    }
 }
