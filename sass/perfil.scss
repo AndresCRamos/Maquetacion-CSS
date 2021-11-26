@@ -1,16 +1,17 @@
 @use 'components/_utilities.scss';
 
 .perfil-info-container {
-    @include utilities.info-box;
+    background-color: utilities.$color-secundario;
+    padding-bottom: 50px;
+}
 
-    .main-info {
-        grid-template-columns: 2fr 3fr;
-    }
+.main-info-perfil {
+    grid-template-columns: 2fr 3fr;
 }
 
 .perfil-projects-container {
     max-width: 980px;
-    margin: 50px auto 0;
+    margin: 50px auto 50px;
 
     > div {
         display: flex;
@@ -28,7 +29,6 @@
     display: inline-block;
     padding: 0 10px;
     max-width: 30%;
-    margin-bottom: 50px;
 
     h4 {
         font-weight: bold;

@@ -1,18 +1,19 @@
 @use 'components/_utilities.scss';
 
-.blogs-main{
-    display: grid;
+.blogs-news-container {
+    background-color: utilities.$color-secundario;
+    padding-bottom:50px;
 }
 
-.blogs-news-container{
-    @include utilities.info-box
+.blogs-posts-container .grid-container > h3 {
+    margin-left: 10px;
 }
 
 
 .post-card {
     display: inline-block;
     padding-left: 10px;
-    max-width: 30%;
+    width: 30%;
     margin-bottom: 50px;
 
     p {
